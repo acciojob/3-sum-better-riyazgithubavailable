@@ -8,14 +8,15 @@ for (let i = 0; i <= n - 3; i++) {
         let sum = arr[i] + arr[j] + arr[k] ;
         let diff = Math.abs(sum - target);
         if(intialDiff > diff) {
+			 intialDiff=diff;
             ans = sum;
         }
     }
   }
 }
+	return ans;
   
 }
-let arr = [-1, 2, 1, 4],
-  target = 1;
-threeSum(arr, target)
+
+
 module.exports = threeSum;
